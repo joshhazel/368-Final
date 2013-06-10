@@ -1,0 +1,355 @@
+/* Main Content for all pages*/
+
+body {
+/*	background: url("../img/bg-main.gif");*/
+	background: url("../img/bg-fade2.gif");
+	color: white;
+}
+body article {
+		background: rgba(0,0,0,.21);
+}
+#wrapper {
+	background: url("../img/bg-main.gif") no-repeat;
+	width: 960px;
+	margin: 0 auto;
+}
+/*Logo is my name*/
+#logo {
+	position: relative;
+	left: 75px;
+}
+/*Fonts*/
+h1, h2, h3 {
+	font-family: 'Droid Serif', Georgia, Times, serif;
+}
+p, li, h3 span{
+	font-family: 'Droid Sans', Helvetica, Arial, sans-serif;	
+}
+p {
+	font-size: 1.05em;
+	line-height: 1.4em;
+}
+
+/*Links*/
+a:link {
+	color: white;
+	text-decoration: none;
+}
+a:visited,active {
+	color: lightblue;
+}
+a:hover {
+	text-decoration: underline;
+}
+p a:link {
+	color: lightblue;
+}
+/*Block Quotes*/
+blockquote{
+	color: #BBB;
+	font-style: italic;
+}
+blockquote:before {
+	content: "\201C  ";
+	color: white;
+	font-weight: bold;
+}
+blockquote:after {
+	content: "  \201D";
+	color: white;
+	font-weight: bold;
+}
+
+
+/* Navigation(s) for Header and Footer */
+.navtop {
+	background: url("../img/bg-nav.jpg");
+}
+nav ul li{
+	display: inline;
+	margin:0 50px 0 0px;
+}
+nav ul li a, footer ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+}
+nav ul li a:hover, footer ul li a:hover {
+	text-decoration: none;
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+	text-decoration: none;
+}
+footer ul {
+		padding: 0;
+}
+footer ul li {
+	display: inline;
+	margin:0 15px 0 0px;
+}
+nav a:link, nav a:visited, nav a:active 
+	footer a:link, footer a:visited, footer:active{
+	color: white;
+}
+
+
+/*---------Main Index Home Page----------*/
+/* Main Portfolio Section */
+.portfolio {
+	background: url("../img/Me.jpg") no-repeat;
+	height: 600px;
+	margin-top: 50px;
+}
+.portfolio h1 {
+	background: rgba(0,0,0,.5);
+	color: white;
+	padding: 10px;
+}
+.portfolio h1 span {
+	font-family:	Georgia, "Times New Roman", Times, serif;
+	font-size: 1.25em;
+}
+.portfolio p {
+	background: rgba(255,255,255,.45);
+	color: black;
+	padding: 10px 20px;
+}
+
+/* Recent Work, Background, Connect */
+.recentWork ul, .recent ul, .connect ul{
+	list-style-type: none;
+	padding: 0;
+}
+.recentWork ul li a img{
+	width: 200px;
+	height: 175px;
+	opacity: .4;
+}
+.recentWork ul li a img:hover{
+	opacity: 1;
+
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.recentWork h3, .recentWork a {
+	color: lightblue;
+	text-indent: 10px;
+	text-decoration: underline;
+}
+.recent h3, .background h3, .connect h3 {
+	background: url("../img/bg-header.gif");
+	padding: 10px;
+}
+.recent ul, .background p, .connect ul {
+	background: url("../img/bg-header-body.png");
+	height: 175px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+/* Recent News */
+.recent ul li {
+	margin: 5px 0 10px 0;
+}
+
+/* Connect Icons Using sprite map*/
+.facebook {
+	background: url("../img/spritemap.png") no-repeat 0 -32px;
+}
+.twitter {
+	background: url("../img/spritemap.png") no-repeat 0 0;
+}
+.email {
+	background: url("../img/spritemap.png") no-repeat 0 -64px;
+}
+.facebook a, .twitter a, .email a {
+		padding: 5px;
+}
+.connect ul li {
+	padding: 12px 32px 0 32px;
+	margin: 10px 0;
+}
+
+/*---------End Main Index Home Page----------*/
+
+
+
+
+/*---------Resume Page----------*/
+.objective, .experience, .education {
+/*	background: rgba(255,255,255,.25);*/
+	background: rgba(0,0,0,.25);
+	margin: 25px;
+	padding: 15px 50px;
+}
+.objective h2, .experience h2, .education h2{
+	margin: 20px 0 -5px 0;
+	color: skyblue;
+	/*background: orange;*/
+}
+hr+p, hr~h3, hr+h3{
+	margin: 20px 0 0 0;
+	/*background: red;*/
+}
+h3~h4 {
+	margin: 10px 0 0 20px; /*20px%*/
+	/*background: green;*/
+}
+h4+ul {
+	margin: 5px 0 10px 0;
+	/*background: gray;*/
+}
+h4+ul>li {
+	line-height: 1.35em;
+	margin: 5px 0px 10px 0px;
+	list-style-type: circle;
+
+	/*color: yellow;*/
+}
+/* This should be before h4>span */
+h4>span:first-of-type, h3>span:first-of-type{
+	width: 70%;
+	font-size: 1em;
+	color: white;
+}
+h4>span, h3>span{
+	width: 20%;
+	font-size: .85em;
+	color: #EEE;
+	/*color: blue;*/
+	display: inline-block;
+}
+#EWU img{
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding: 0 5px 0 0;
+}
+/*---------End Resume Page----------*/
+
+
+
+/*---------Start Work Page----------*/
+.work h1 {
+	font-size: 3em;
+}
+.work h2 {
+	font-size: 1.75em;
+}
+.work h1, .work h2, .work h3 {
+  font-family: Geneva, sans-serif;
+  color: hsla(0,0%,0%,0);
+	-webkit-perspective: 100;
+	-moz-perspective: 100;
+	-ms-perspective: 100;
+	perspective: 100;
+
+	/*Note: No support for text-shadow in MS IE 9*/
+  -moz-text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+  -ms-text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+  -o-text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+}
+
+/*  Zine Intro  */
+.zine {
+	margin: 15px;
+	background: rgba(0,0,0,.25);
+	padding: 15px;
+}
+.zinefront, .zineback {
+	text-align: center;
+}
+.zinefront img, .zineback img{
+	width: 180px;
+	height: 252px;
+}
+.zinecover p {
+	text-align:justify;
+	line-height: 1em;
+}
+.zineintro p{
+	margin: -15px 35px 15px 30px;
+	font-size: 20px;
+}
+
+/*  Zine Pages  */
+.zinepages section {
+	margin: 10px 10px;
+	background: rgba(0,0,0,.25);
+	height: 700px;
+}
+.zinepages section p{
+	padding: 0 20px;
+}
+.zinepages section h2 {
+	text-align: center;
+}
+.zinepages section img {
+	display: block;
+	margin: 20px auto 40px auto;
+	position: relative;
+	width: 360px;
+	height: 252px;
+}
+/*Zine Pages Images*/
+.zine img {
+	box-shadow: 10px 10px 5px rgba(0,0,0,.75);
+}
+.zinepages img:hover, .zinefront img:hover, .zineback img:hover {
+	cursor: hand; cursor: pointer; 
+	position: relative;
+	z-index: 100;
+	box-shadow: 15px 15px 5px rgba(0,0,0,.75);
+
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+/*  Book */
+.book, .book3d {
+	background: rgba(0,0,0,.25);
+	padding: 5px 25px 20px 25px;
+	margin: 15px;
+}
+.book img, .magazine img {
+	box-shadow: 15px 15px 5px rgba(0,0,0,.75);
+}
+.book p {
+	padding: 0 20px;
+	text-align: justify;
+}
+
+/*  Magazine */
+.magazine {
+	margin: 25px;
+	padding: 25px;
+	background: rgba(0,0,0,.25);
+}
+.magazine img {
+	width: 418.50px;
+	height: 564.50px;
+}
+.magazine p {
+	padding-right: 20px;
+	text-align: justify;
+}
+/*--------End Work Page-------------*/
